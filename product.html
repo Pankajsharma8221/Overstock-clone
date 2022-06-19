@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product_page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./footer.css">
+    <style>
+        #ptop{
+            font-size: 15px;
+            text-transform: uppercase;
+        color: teal;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid red;
+  margin-top: 2%;
+  margin-bottom: 3%;
+         }
+         #picon{
+          margin-top: 10px; 
+          margin-left: 20px; 
+         }
+        #pcont{
+        display: flex;
+       }#pleft{
+          margin-left: 80px;
+       }
+       #pright{
+        margin-left: -10%;
+        margin-top: 6%;
+        width: 25%;
+       }
+       #pheading
+       {
+      
+        text-transform: uppercase;
+        color: teal;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+       }
+
+       .checked {
+  color: orange;
+  margin-top: 5%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-envelope{
+    background: black;
+    color: rgb(154, 154, 2);
+}
+#paddToCart{
+width: 220px;
+height: 30px;
+margin-top: -5px;
+margin-left: 10px;
+background-color:#27865f;
+border: 0px;
+border-radius: 5px;
+color:#ffffff;
+}
+.incDec{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 30px;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}
+a
+{
+  color: black;
+  text-decoration: underline;
+}
+#zken
+{
+  color: teal;
+  text-decoration: underline;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}
+.stickz{
+    height: 80px;
+width: 250%;
+}
+i
+{
+    margin-left: 0.5%;
+}
+#zhead
+{
+ display: flex;
+ height: 60px;
+ justify-content: space-around;
+ margin: auto;
+}
+  
+  #zpiku
+  {
+    border: 1px solid grey;
+    width: 310%;
+    padding: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #8c9bad;
+    background-color: #ffffff;
+    margin-left: -120%;
+    border-radius: 5px;
+    margin-top: 7%;
+  }
+  form.example button:hover {
+    background: #021321;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .roy
+  {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    text-align: center;
+    margin-top: 0.5%;
+    font-size: large;
+    color:teal;
+  }
+  .ALP
+  {
+    margin-top: -2%;
+    color: grey;
+  }
+  .navbar
+        {
+            display: flex;
+            height: 50px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            margin-top: 1%;
+            border: 1PX SOLID teal;
+            border-top: none;
+            border-left: none;
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+        }
+       .B>ul
+       {
+           display: grid;
+           grid-template-columns: repeat(13, 1fr);
+           grid-template-rows: auto;
+           gap: 2px;
+            margin-left: 1%;
+           align-items: center;
+           margin-top: 0.8%;
+       }
+       ul>li:hover
+       {
+           display: block;
+       }
+       ul>li{
+           list-style-type: none;
+           font-size: large;
+           font-family: 'Poppins', sans-serif;
+           border-top: none;
+       }
+       ul>li:nth-child(6)
+       {
+        margin-left: -48%;
+       }
+       ul>li:nth-child(13)
+       {
+        margin-left: -20%;
+       }
+       .set
+{
+       display:flex;
+           font-size: larger;
+           font-family: 'Poppins', sans-serif;
+           justify-content: space-around;
+           margin-top: 7%;
+}.set>li:nth-child(1)
+{
+    font-size: 30px;
+    color: #c47d74;
+}
+.set>li:nth-child(2)
+{
+    font-size: 30px;
+    color: #c47d74;
+}
+.set>li:nth-child(3)
+{
+    font-size: 30px;
+    color: #c47d74;
+}
+.set>li:nth-child(4)
+{
+    font-size: 20px;
+    color: #c47d74;
+}
+.set>li:nth-child(5)
+{
+    font-size: 30px;
+    color: #c47d74;
+}
+</style>
+<body>
+    <header>
+   
+        <ul style="display:flex;" >
+            <li>Ship</li>
+            <li>To:</li>
+            <li><i class="fa-solid fa-earth-asia">India</i></li>
+        </ul>
+    </header>
+    
+    <header>
+        <div id="zhead">
+            <a href="./index.html"><img class="stickz" src="https://www.logo.wine/a/logo/Overstock.com/Overstock.com-Logo.wine.svg" alt="sports jam"></a>
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input id="zpiku" type="text" placeholder="Search.." name="search2"/>
+            </form>
+            <div class="roy">
+                <div class="zen">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="ALP"><a style="text-decoration: none;color:grey" href="./User Account/account.html">Account</a></p>
+           
+                </div> 
+                <div class="zen">
+                    <i class="fa-solid fa-heart"></i>
+               <p class="ALP">WishList</p>
+                </div>
+                <div class="zen">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="ALP">Cart</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="navbar">
+        <div class="B">
+            <ul>
+                <li><a style="text-decoration:none; color:black;" href="./furniture/furni.html">Furniture</a> </li>
+                <li><a style="text-decoration:none ;color:black;" href="./wash/washable.html">Rugs</a> </li>
+                <li><a style="text-decoration:none ;color:black;" href="./decor/decor.html">Decor</a> </li>
+                <li><a style="text-decoration:none ;color:black;" href="./neww/sintex.html">Bedding</a> </li>
+                <li>Home</li>
+                <li>Improvement</li>
+                <li>Kitchen</li>
+                <li>Outdoor</li>
+                <li>Lighting</li>
+                <li>Kids & Baby</li>
+                <li>More</li>
+                <li>Ideas</li>
+                <li>Sales & Deals</li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+    <div id="pcont">
+<div id="pleft">
+        <p id="ptop">Patio Furniture / Outdoor Sofas, Chair & Sectionals   /  Patio Sets   / Adirondack Chairs</p>
+         <div id="pimagekadu"></div>
+        <br>
+        <div id="picon">
+        <i class="fa-solid fa-envelope  fa-2x "></i>
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i class="fa-brands fa-twitter fa-2x"></i>
+        <i class="fa-brands fa-pinterest fa-2x"></i>
+    </div>
+    <p>" Easy to assemble. Umbrella hole and stability rack adds to the oeverall <br> quality to this beautiful table, extremely pleased with my purchase.</p>
+     </div>
+
+
+
+    <div id="pright">
+     <h3 id="pheading"></h3>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star"></span>
+     <span class="fa fa-star"></span>
+         <div>
+            <ul class="set">
+                <li>Sale</li>
+                <li>Starts</li>
+                <li>at</li>
+                <li>inr</li>
+                <li>26320</li>
+            </ul>
+         </div>
+        <div class="incDec">
+            <div>
+                <button class="count inc">-</button>
+                <button id="pproductQTY"></button>
+                <button class="count dec">+</button>
+            </div>
+           
+        <div>
+            <a href="./payment.html"><button id="paddToCart">ADD TO CART</button></a>
+        </div>
+   
+    </div>
+
+    </div>
+</div>
+<div class="footer">
+    <div id="vfoot">
+        <div>
+            <h4><a class="vfooter" href="">MY ACCOUNT</a></h4>
+                <br>
+                <div><a class="vfooter" href="">Orders & Returns</a></div>
+                <div><a class="vfooter" href="">Email Preferences</a></div>
+                <div><a class="vfooter" href="">Account Settings</a></div>
+        </div>
+
+        <div>
+            <h4>LET US HELP</h4>
+            <br>
+            <div>Contact Customer Care
+            </div>
+            <div> Shipping Information
+
+            </div>
+            <div> 
+                Return Policy
+            </div>
+            <div> International Help
+            </div>
+            <div> 
+                Accessibility
+            </div>
+           
+        </div>
+
+        <div>
+            <h4>COMPANY INFORMATION</h4>
+            <br>
+            <div>About Overstock™</div>
+            <div> 
+                Contact Us</div>
+            <div> Careers</div>
+            <div> Investor Relations
+            </div>
+            <div> Sell Your Products
+            </div>
+            <div> Supply Chain Transparency</div>
+        </div>
+        <div>
+            <h4>MORE WAYS TO SHOP
+            </h4>
+            <br>
+            <div>Tips & Ideas</div>
+            <div> 
+                Deals</div>
+            <div> Clearance</div>
+            <div> New Arrivals
+            </div>
+           
+        </div>
+       
+    </div>
+    <div id="vlast">
+        <div id="vlast1">
+            © Copyright 2022, Overstock.com®, Inc. <br>
+799             Coliseum Way Midvale, UT 84047 | 1-800-843-2446
+        </div>
+
+        <div id="vPrivacy">
+            <div>
+                Privacy Policy
+            </div>
+            <div>
+                Terms & Conditions
+            </div>
+            <div>
+                *Promotion Terms
+            </div>
+            <div>
+                Ship to:
+            </div>
+            <div id="vflag">
+                <img src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt="">
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://kit.fontawesome.com/1176b352c6.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/d794204cca.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<script>
+    const count = document.querySelectorAll('.count');
+    var c = JSON.parse(localStorage.getItem('qtyCount')) || 1;
+document.getElementById('pproductQTY').innerText = c;
+count.forEach((element) => {
+    element.addEventListener('click',function(){
+        if(element.textContent== '-') c--;
+        if(element.textContent== '+') c++;
+        if(c<1 && element.textContent== '-') c = 1;
+        else{
+            document.getElementById('pproductQTY').innerText = c;
+        }
+        localStorage.setItem('qtyCount',JSON.stringify(c));
+    })
+})
+
+var addtocart=JSON.parse(localStorage.getItem('addToCart'));
+console.log(addtocart);
+display(addtocart)
+
+function display(data)
+{
+
+    document.querySelector("#pimagekadu").innerHTML=""
+    
+    var div= document.createElement("div");
+      var image1=document.createElement("img")
+      image1.src=data[data.length-1].image
+
+      var name = document.createElement("p")
+      name.innerText = data[data.length-1].p2
+
+ 
+  div.append(image1,name);
+  document.querySelector("#pheading").appendChild(name);
+  document.querySelector("#pimagekadu").append(div)
+}
+</script>                              

@@ -1,0 +1,189 @@
+#zcontainer
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 40px;
+    color: rgb(68, 68, 68);
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+a
+{
+  color: grey;
+  text-decoration: underline;
+}
+#zken
+{
+  color: teal;
+  text-decoration: underline;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}
+.stickz{
+height: 80px;
+width: 250%;
+}
+i
+{
+    margin-left: 0.5%;
+}
+#zhead
+{
+ display: flex;
+ height: 60px;
+ justify-content: space-around;
+ margin: auto;
+}
+
+  #zpiku
+  {
+    border: 1px solid grey;
+    width: 310%;
+    padding: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #8c9bad;
+    background-color: #ffffff;
+    margin-left: -90%;
+    border-radius: 5px;
+    margin-top: 7%;
+  }
+  form.example button:hover {
+    background: #021321;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .roy
+  {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    text-align: center;
+    margin-top: 0.5%;
+    font-size: large;
+    color:teal;
+  }
+  .ALP
+  {
+    margin-top: -2%;
+    color: grey;
+  }
+  .navbar
+        {
+            display: flex;
+            height: 50px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            margin-top: 1%;
+            border: 1PX SOLID teal;
+            border-top: none;
+            border-left: none;
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+            cursor: pointer;
+        }
+       .B>ul
+       {
+           display: grid;
+           grid-template-columns: repeat(13, 1fr);
+           grid-template-rows: auto;
+           gap: 2px;
+            margin-left: -1%;
+           align-items: center;
+           margin-top: 0.8%;
+       }
+       ul>li:hover
+       {
+           display: block;
+       }
+       ul>li{
+           list-style-type: none;
+           font-size: large;
+           font-family: 'Poppins', sans-serif;
+           border-top: none;
+       }
+       ul>li:nth-child(6)
+       {
+        margin-left: -48%;
+       }
+       ul>li:nth-child(13)
+       {
+        margin-left: -20%;
+       }
+#zmain
+{
+    display: flex;
+    width: auto;
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.blr
+{
+  text-align: center;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}
+#Zform
+{
+  text-align: center;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}
+#zsubmit
+{
+  width: 40%;
+  background-color: rgb(51, 206, 206);
+  border-radius: 5px;
+  border-color: azure;
+  padding:10px;
+  color: white;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+}
+#Zsubmit
+{
+  width: 40%;
+  background-color: rgb(51, 206, 206);
+  border-radius: 5px;
+  border-color: azure;
+  padding:10px;
+  color: white;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+}
+#zguest
+{
+  width: 30%;
+  border-radius: 5px;
+  padding:10px;
+  color: white;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+  border: 1px solid teal;
+}
+#zalexa
+{
+  font-size: small;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+footer
+{
+ width: 30%;
+ margin-left: 6%;
+ margin-top: 2%;
+}
+ul>li:nth-child(6)
+{
+  margin-left: 1%;
+}

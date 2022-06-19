@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment page</title>
+    <style>
+        #pbody {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #pheading {
+            display: flex;
+            height: 130px;
+            width: 103%;
+            background-color: black;
+            margin-top: -30px;
+            text-align: center;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            font-family: BBText Regular,Helvetica,Arial,sans-serif;
+            font-size: 35px;
+            line-height: 19px;
+        }
+
+        #pfooter {
+            width :103%;
+            height:190px;
+            border: 1px solid;
+            margin-top: 90px;
+            display: flex;
+            background-color: black;
+            justify-content: space-evenly;
+        }
+
+        .pfoot {
+            width: 33%;
+            height: 100px;
+            border: 1px solid black;
+            color: white;
+            margin-top: 60px;
+            margin-left: 90px;
+            cursor: pointer;
+
+        }
+
+        #pbox {
+            display: flex;
+            height: 1400px;
+            width: 70%;
+            /* border: 1px black solid;   */
+            margin-left: 240px; 
+            margin-top: 100px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #pcheckout {
+            width: 63%;
+            height: 100%;
+            /* border: 1px solid black; */
+            
+        }
+
+        
+
+        .pheadingc {
+            width: 100%;
+            height: 80px;
+            border: 1px solid white;
+            border-bottom: 2px solid black;
+            
+        }
+
+        .pmail {
+            width: 100%;
+            height: 55px;
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+            /* background-color:rgb(231, 225, 225); */
+        }
+
+        .paddresssubmitted{
+            width:100%;
+            height: 200px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .paddress {
+            height:100%;
+            width:44%;
+            /* border: 1px solid black; */
+
+        }
+
+        .pfreeship {
+            border-bottom: 1px solid black;
+            width: 90%;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 0px;
+            
+        
+        }
+
+        .pCC {
+            line-height: auto;
+            margin-left: 20px;
+            margin-top: 10px;
+           
+           
+        }
+
+        .ppayoption {
+            height: 330px;
+            width: 330px;
+           
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .poption {
+            height: 25%;
+            width: 100%;
+            /* border: 1px solid black; */
+            /* display: flex; */
+        }
+
+        .poption>p {
+            margin-left: 40px;
+            margin-top: -10px;
+        }
+
+        #pmagicbox {
+            height: 190px;
+            width: 90%;
+            /* border: 1px solid black; */
+            margin-left: 20px;
+        }
+
+        #pReward {
+        width: 34.5%;
+        height: 100%;
+        /* border: 1px solid black; */
+        /* background-color:rgb(231, 225, 225); */
+        }
+
+        #pbag {
+        display: flex;
+        width: 100%;
+        height: 70%;
+        /* border: 1px solid black; */
+        background-color:rgb(231, 225, 225);
+        /* align-content: center; */
+        justify-content: center;
+
+    }
+
+        #pinnerbag {
+        width: 92%;
+        height: 100%;
+        /* border: 1px solid black; */
+        /* background-color:rgb(231, 225, 225) ; */
+    }
+
+        #plastbox {
+        width: 100%;
+        height: 60px;
+        /* border-top: 1px solid black; */
+        border-bottom: 1px solid black;
+        text-align: center;
+        /* padding-top: 15px; */
+    }
+
+    #psubbtton {
+    margin-right: 20px;
+    height: 40px ;
+    width: 80px;
+    margin-top: 7px;
+    
+    background-color: black;
+    font-weight: bolder;
+    /* margin-bottom: 20px; */
+}
+
+#su {
+    display: flex;
+    
+}
+
+#pdonate {
+    width:100%;
+    height: 500px;
+    /* border: 1px solid black; */
+    /* margin-top: 30px; */
+}
+a
+{
+  color: black;
+  text-decoration: underline;
+}
+#zken
+{
+  color: teal;
+  text-decoration: underline;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}
+.stickz{
+    height: 80px;
+width: 250%;
+}
+i
+{
+    margin-left: 0.5%;
+}
+#zhead
+{
+ display: flex;
+ height: 60px;
+ justify-content: space-around;
+ margin: auto;
+ background-color:white;
+}
+  
+/* form.example button {
+    width: 20%;
+    padding: 12px;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    color: #8c9bad;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: 192%;
+    margin-top: -20%;
+  } */
+  #zpiku
+  {
+    border: 1px solid grey;
+    width: 310%;
+    padding: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #8c9bad;
+    background-color: #ffffff;
+    margin-left: -120%;
+    border-radius: 5px;
+    margin-top: 7%;
+  }
+  form.example button:hover {
+    background: #021321;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .roy
+  {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    text-align: center;
+    margin-top: 0.5%;
+    font-size: large;
+    color:teal;
+  }
+  .ALP
+  {
+    margin-top: -2%;
+    color: grey;
+  }
+  .navbar
+        {
+            display: flex;
+            height: 50px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            margin-top: 1%;
+            border: 1PX SOLID teal;
+            border-top: none;
+            border-left: none;
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+        }
+       .B>ul
+       {
+           display: grid;
+           grid-template-columns: repeat(13, 1fr);
+           grid-template-rows: auto;
+           gap: 2px;
+            margin-left: -1%;
+           align-items: center;
+           margin-top: 0.8%;
+       }
+       ul>li:hover
+       {
+           display: block;
+       }
+       ul>li{
+           list-style-type: none;
+           font-size: large;
+           font-family: 'Poppins', sans-serif;
+           border-top: none;
+       }
+       ul>li:nth-child(6)
+       {
+        margin-left: -48%;
+       }
+       ul>li:nth-child(13)
+       {
+        margin-left: -20%;
+       }
+#pankaj{
+    position: fixed;
+}
+
+    </style>
+     <link rel="stylesheet" href="./footer.css">
+</head>
+<body>
+   
+    <header>
+   
+        <ul style="display:flex;" >
+            <li>Ship</li>
+            <li>To:</li>
+            <li><i class="fa-solid fa-earth-asia">India</i></li>
+        </ul>
+    </header>
+    
+    <header>
+        <div id="zhead">
+            <a href="./index.html"><img class="stickz" src="https://www.logo.wine/a/logo/Overstock.com/Overstock.com-Logo.wine.svg" alt="sports jam"></a>
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input id="zpiku" type="text" placeholder="Search.." name="search2"/>
+                <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+            </form>
+            <div class="roy">
+                <div class="zen">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="ALP"><a style="text-decoration: none;color:grey" href="./User Account/account.html">Account</a></p>
+           
+                </div> 
+                <div class="zen">
+                    <i class="fa-solid fa-heart"></i>
+               <p class="ALP">WishList</p>
+                </div>
+                <div class="zen">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="ALP">Cart</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="B">
+            <ul>
+                <li><a style="text-decoration:none; color:black;" href="./furniture/furni.html">Furniture</a> </li>
+                <li><a style="text-decoration:none ;color:black;" href="./wash/washable.html">Rugs</a> </li>
+                <li><a style="text-decoration:none ;color:black;" href="./decor/decor.html">Decor</a> </li>
+                <li><a style="text-decoration:none ;color:black;" href="./neww/sintex.html">Bedding</a> </li>
+                <li>Home</li>
+                <li>Improvement</li>
+                <li>Kitchen</li>
+                <li>Outdoor</li>
+                <li>Lighting</li>
+                <li>Kids & Baby</li>
+                <li>More</li>
+                <li>Ideas</li>
+                <li>Sales & Deals</li>
+            </ul>
+        </div>
+</nav>
+
+
+  
+    <div id="pbox">
+        <div id="pcheckout">
+            <div class="headingc"><p style="font-weight: bolder;
+                font-size: 20px;
+                font-family: BBText Bold,Helvetica,Arial,sans-serif; margin-left: 20px;padding-top: 20px;">C H E C K O U T</p></div>
+                <div class="mail" style="background-color:rgb(231, 225, 225)"><p style="font-weight: bolder;margin-left: 20px;">E M A I L</p></div>
+                <div class="mail" style="background-color:white;"><p style="font-weight: bolder;margin-left: 20px;">Pankajsaraswatsharma@gmail.com</p></div>
+                <div class="mail" style="background-color:rgb(231, 225, 225);display: flex;justify-content: space-between;"><p style="font-weight: bolder;margin-left: 20px; ">S H I P P I N G</p>
+                <button id="psubbtton" ><a style="color: white; " href="D:\IT\u2c4 template 2\project bobbi brown\shipping.html"><u>EDIT</u></a></button></div>
+                <div class="addresssubmitted">
+                    <div class="address">
+                        <div class="freeship"><p style="font-weight: bolder;
+                            font-size: 14px;
+                            font-family:Arial, Helvetica, sans-serif;margin-top: 25px;
+                            margin-bottom: -30px;">S H I P P I N G &nbsp;A D D R E S S</p>
+                             <p id="puname" style="margin-top: 80px; font-family:Arial, Helvetica, sans-serif; text-transform: capitalize; " ></p></div> 
+                             <p id="puaddress" style="margin-top: 50px;font-weight: 200;text-transform: capitalize;font-family:Arial, Helvetica, sans-serif;" ></p>
+                             <p id="pustate" style="margin-top: -11px;font-weight: 200;text-transform: capitalize;font-family:Arial, Helvetica, sans-serif;"></p>
+                             <p id="puphoneno" style="margin-top: -10px;"></p>
+                             
+                        </div>
+                        <div class="address">
+                            <div class="freeship"><p style="font-weight: bolder;
+                                font-size: 14px;
+                                font-family:Arial, Helvetica, sans-serif" margin-top: 25px;
+                                margin-bottom: -30px;">G I F T &nbsp; O P T I O N S</p>
+                                <p style="margin-top: 70px;">Gift Wrap : No<br><br> No Message</p></div>
+                        </div>
+
+                    </div>
+                    <div class="mail" style="background-color:rgb(231, 225, 225); margin-top: 10px;"><p style="font-weight: bolder;margin-left: 20px;">P A Y M E N T</p></div>
+                    <div id="ppayoption">
+                        <div class="option">
+                            <img src="https://www.bobbibrowncosmetics.com/media/images/checkout/brasslock.jpg" alt="" style="align-items:flex-end ;height: 35px;width: 35px; margin-left:600px;"><br>
+                            <input type="radio" class="CC" id="pCrC" value="credit card" name="paymentoption" checked="true">
+                            <label for="creditc" class="payoption">CREDIT CARD</label><br>
+                            <img class="ccard" style="margin-left: 20px;margin-top:15px" src="https://www.bobbibrowncosmetics.com/media/images/account/mastercard.gif" alt="">
+                            <img class="ccard" src="https://www.bobbibrowncosmetics.com/media/images/account/visa.gif" alt="">
+                            <img class="ccard" src="https://www.bobbibrowncosmetics.com/media/images/account/americanexpress.gif" alt="">
+                            <img class="ccard" src="https://www.bobbibrowncosmetics.com/media/images/account/discover.gif" alt="">
+                            <img class="ccard" src="https://www.bobbibrowncosmetics.com/media/images/account/unionpay.svg" alt="">
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="CC" id="pPP" value="payPal" name="paymentoption"  >
+                            <label for="creditc" class="payoption">PAY PAL</label><br>
+                            <img class="ccard" style="margin-left: 20px;margin-top:15px" src="https://www.bobbibrowncosmetics.com/media/images/checkout/paypal.gif" alt="">
+                        </div>
+                        <div class="option" style="height:50% ;">
+                            <input type="radio" class="CC" id="pCoD" value="cashOn" name="paymentoption">
+                            <label for="creditc" class="payoption">AFTER PAY</label>
+                            <p style="margin-top: 10px;margin-left: 20px;">Pay with <img src="https://www.bobbibrowncosmetics.com/media/images/checkout/afterpay-logo-black.png" style="height: 20px;width: 60px;" alt=""></p>
+                            <p style="margin-left: 20px;line-height: 12px;">Pay $0 Now</p>
+                            <p style="margin-left: 20px;line-height: 12px;" >First Payment 2 Weeks From Purchase</p>
+                            <p style="margin-left: 20px;line-height: 12px;">4 interest-free installments of $9.45 i </p>
+                            
+                        </div> 
+                        <div id="pmagicbox" ></div>
+                     </div>
+                     
+                     <div class="mail"><p style="background-color:rgb(231, 225, 225);; margin-top: 10px;"><p style="font-weight: bolder;margin-left: 20px;
+                        ">C O M P L E T E &nbsp; O R D E R </p></div>
+                        <div class="addresssubmitted" style="background-color: white;height: 100px;"><p style="margin-left: 20px; margin-right: 20px;margin-top: 40px;">By clicking Place Order, I agree to be bound by the Overstock <a style="color: #949494;" href="">Terms and Conditions</a> and Privacy Policy.</p></div>
+                        <div class="freeship"><p style="font-weight: bolder;
+                            font-size: 14px;
+                            font-family: BBText Bold,Helvetica,Arial,sans-serif; margin-top: 25px;
+                            margin-bottom: -30px;">O U R &nbsp; G U A R A N T E E</p></div>
+                             <div id="psu">
+                               <p style="font-size: 16px;margin-left: 20px;margin-right:20px ;">If for any reason you are not completely satisfied with your Overstock Online purchase, simply return the unused portion and we will be happy to process an exchange or remit your account for the full amount of the purchase. Please refer our Return Policy.</p>
+                                </div>
+                </div>
+                
+                <div id="pReward" >
+                    <div id="pbag">
+                        <div id="pinnerbag">
+                            <div  style="background-color:rgb(231, 225, 225); border-bottom: 1px black solid;"><p style="font-weight: bolder; margin-top: 15px;" >S H O P P I N G &nbsp;B A G</p></div>
+                            <div class="mail" ;"><p style="font-weight: bolder;">pankajsaraswatsharma@gmail.com</p></div>
+                            <div class="mail" style="background-color:rgb(231, 225, 225); border-bottom: 1px black solid;"> <h2 style=" font-family: 'Titillium Web', sans-serif;">O F F E R &nbsp; C O D E</h2></div>
+                            <input type="text" style="width: 96%;height: 35px;border-color: 1px grey;margin-top: 30px; padding-left: 10px; " placeholder="Offer Code">
+                            <div style="display: flex; justify-content: space-between;">
+                                <p >One offer code per order</p>
+                                <a href="https://www.bobbibrowncosmetics.com/includes/content/see_all_offers_popup.tmpl?embed=1" style="font: size 11px; color:#949494; margin-top: 15px;">See all other offers</a>
+                            </div>
+                            <button style="height: 30px ;width: 100px;margin-top: 15px;color: white;background-color: black;font-weight: bolder;">APPLY</button>
+                            <div style="width: 100%; border-bottom:1px solid black;margin-top: 20px;"></div>
+                            <div id="plastbox"><p style="margin-top: 10px;"> Join Overstock <br> and earn 30 points with your purchase today.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pdonate" class="mail" style="border-bottom: 1px black solid;"><h2 style="font-family: 'Titillium Web', sans-serif;">D O N A T E</h2>
+                        <div style="border-bottom: 1px solid black;width: 100%;margin-top: -8px;">
+                        </div>
+                        <img src="https://www.bobbibrowncosmetics.com/media/export/cms/products/80x80/bb_prod_555877_80x80_0.jpg" alt="">
+                        <select type="text" style="width:96%; height: 28px;"><option value=""> DONATION</option>
+                            <option value="">SHE'S THE FIRST</option></select> <div style="height: 200px;width: 100%;"><p>Donate today to The Breast Cancer Research Foundation to support life-saving research. Learn More.</p>
+                                <input type="radio" name="donation"><label for="donat">$1.00</label>
+                                <input type="radio" name="donation" ><label for="donat">$5.00</label>
+                                <input type="radio" name="donation" ><label for="donat">$10.00</label><br><br>
+                                <button id="psubbtton" style="margin-left: 2px;color: white;width: 95px;"><a href="./shipping.html"> Add to Bag</a></button>
+                            </div>
+                    </div>
+
+                </div>
+        </div>
+       
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div id="vfoot">
+            <div>
+                <h4><a class="vfooter" href="">MY ACCOUNT</a></h4>
+                <br>
+                <div><a class="vfooter" href="">Orders & Returns</a></div>
+                <div><a class="vfooter" href="">Email Preferences</a></div>
+                <div><a class="vfooter" href="">Account Settings</a></div>
+                
+            </div>
+
+            <div>
+                <h4>LET US HELP</h4>
+                <br>
+                <div>Contact Customer Care
+                </div>
+                <div> Shipping Information
+
+                </div>
+                <div> 
+                    Return Policy
+                </div>
+                <div> International Help
+                </div>
+                <div> 
+                    Accessibility
+                </div>
+               
+            </div>
+
+            <div>
+                <h4>COMPANY INFORMATION</h4>
+                <br>
+                <div>About Overstock™</div>
+                <div> 
+                    Contact Us</div>
+                <div> Careers</div>
+                <div> Investor Relations
+                </div>
+                <div> Sell Your Products
+                </div>
+                <div> Supply Chain Transparency</div>
+            </div>
+            <div>
+                <h4>MORE WAYS TO SHOP
+                </h4>
+                <br>
+                <div>Tips & Ideas</div>
+                <div> 
+                    Deals</div>
+                <div> Clearance</div>
+                <div> New Arrivals
+                </div>
+               
+            </div>
+           
+        </div>
+        <div id="vlast">
+            <div id="vlast1">
+                © Copyright 2022, Overstock.com®, Inc. <br>
+799             Coliseum Way Midvale, UT 84047 | 1-800-843-2446
+            </div>
+
+            <div id="vPrivacy">
+                <div>
+                    Privacy Policy
+                </div>
+                <div>
+                    Terms & Conditions
+                </div>
+                <div>
+                    *Promotion Terms
+                </div>
+                <div>
+                    Ship to:
+                </div>
+                <div id="vflag">
+                    <img src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt="">
+                </div>
+            </div>
+        </div>
+    <script src="https://kit.fontawesome.com/1176b352c6.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/1176b352c6.js" crossorigin="anonymous"></script>
+</body>
+</html>
+<script>
+
+// addess box 
+
+    var name = (localStorage.getItem("username"))
+    var pname = document.querySelector("#uname")
+    pname.append(name)
+    
+    var address = (localStorage.getItem("address"))
+    var paddress = document.querySelector("#uaddress")
+    paddress.append(address)
+
+    var state = (localStorage.getItem("innerstate"))
+    var pstate = document.querySelector("#ustate")
+    pstate.append(state)
+
+    var phonenoc = (localStorage.getItem("phoneno"))
+    var pphone = document.querySelector("#uphoneno")
+    pphone.append(phonenoc)
+
+    // -----------------------------------------------------------
+
+
+    
+// -----------------------------------------------------------
+var countc=0
+var countp=0
+    var mbox = document.querySelector("#magicbox")
+
+
+// ============================================================================= 
+// default value set ==>
+    var ccnum = document.createElement("input")
+            ccnum.placeholder="*Credit Card Number"
+            ccnum.style="width:300px;height:40px; margin-left:0px; margin-top:15px"
+           
+
+            var month = document.createElement("input")
+            month.placeholder="MONTH"
+            month.style="width:120px;height:40px; margin-left:20px; margin-top:15px"
+            
+            var year = document.createElement("input")
+            year.placeholder="YEAR"
+            year.style="width:140px;height:40px; margin-left:0px; margin-top:15px"
+
+            var cvv = document.createElement("input")
+            cvv.placeholder="*CVV"
+            cvv.style="width:100px;height:40px; margin-left:20px; margin-top:15px"
+            
+         
+            mbox.append(ccnum)
+            mbox.append(month,year,cvv)
+
+                  var btn = document.createElement("button")
+              btn.innerText="PLACE ORDER"
+              btn.style="margin-left: 20px; height: 35px ; width: 100px; margin-top: 15px; color: white; background-color: black; font-weight: bolder; margin-bottom: 20px;"
+              btn.addEventListener("click",emptydata )
+              mbox.append(btn)
+
+
+
+
+// ------------------------------------------------------------------------------------------------------ 
+   
+// call functions for pyment
+
+      var cc = document.querySelector("#CrC")
+   
+    cc.addEventListener("click",allfunc)
+
+    var pp = document.querySelector("#PP")
+    
+    pp.addEventListener("click",allfunc)
+
+    var ap = document.querySelector("#CoD")
+    
+    ap.addEventListener("click",allfunc)
+
+
+
+
+    function allfunc(){
+        // event.preventDefault();
+        mbox.innerText=""
+
+
+        if (cc.checked==true){
+            
+            if (countc<100)
+            {
+            // window.location.reload()
+            var ccnum = document.createElement("input")
+            ccnum.placeholder="*Credit Card Number"
+            ccnum.style="width:300px;height:40px; margin-left:0px; margin-top:15px"
+           
+
+            var month = document.createElement("input")
+            month.placeholder="MONTH"
+            month.style="width:120px;height:40px; margin-left:20px; margin-top:15px"
+            
+            var year = document.createElement("input")
+            year.placeholder="YEAR"
+            year.style="width:140px;height:40px; margin-left:0px; margin-top:15px"
+
+            var cvv = document.createElement("input")
+            cvv.placeholder="*CVV"
+            cvv.style="width:100px;height:40px; margin-left:20px; margin-top:15px"
+            
+         
+            mbox.append(ccnum)
+            mbox.append(month,year,cvv)
+
+                  var btn = document.createElement("button")
+              btn.innerText="PLACE ORDER"
+              btn.style="margin-left: 20px; height: 35px ; width: 100px; margin-top: 15px; color: white; background-color: black; font-weight: bolder; margin-bottom: 20px;"
+              btn.addEventListener("click",emptydata )
+              mbox.append(btn)
+
+            countc++
+             }
+        }
+        else if ((pp.checked==true)){
+            if (countp<100)
+            {
+           
+                var btn = document.createElement("button")
+                btn.innerText="CONTINUE"
+                btn.style="margin-left: 0px; height: 30px ; width: 100px; margin-top: 35px; color: white; background-color: black; font-weight: bolder; margin-bottom: 20px;"
+               
+                mbox.append(btn)
+            countp++
+             }
+             
+        }
+        else if (ap.checked==true){
+            mbox.innerText=""
+            if (countp<100)
+            {
+                var div = document.createElement("div")
+               
+                 div.style=" border-bottom: 1px solid black;width: 105%;  height: 30px;  margin-top: 30px;font-weight: bolder; font-size: 14px; font-family:Arial, Helvetica, sans-serif;margin-left: 0px; margin-bottom: -10px;"
+                div.innerText="B I L L I N G - A D D R E S S"
+                mbox.append(div);
+
+
+                var div2 = document.createElement("div")
+                div2.style="width: 105%;  height: 15px;  margin-top: 20px; font-family:Arial, Helvetica, sans-serif;margin-left: 0px;text-transform: capitalize;"
+                mbox.append(div2);
+                
+                var name = (localStorage.getItem("username"))
+                div2.append(name)
+                    
+
+                var adddiv = document.createElement("div")
+                adddiv.style="width: 50%;  height: 15px;  margin-top: 15px; font-family:Arial, Helvetica, sans-serif;margin-left: 0px;text-transform: capitalize;"
+                mbox.append(adddiv);
+                var address = (localStorage.getItem("address"))
+               
+
+
+
+                var state = (localStorage.getItem("innerstate"))
+                adddiv.append(address,state);
+
+
+                
+                var phon = document.createElement("div")
+                phon.style="width: 100%;  height: 25px;  margin-top: 40px; font-family:Arial, Helvetica, sans-serif;margin-left: 0px;"
+                mbox.append(phon);
+                    var phonenoc = (localStorage.getItem("phoneno"))
+                    phon.append(phonenoc);
+
+                    var btn = document.createElement("button")
+                btn.innerText="PLACE ORDER"
+                btn.style="margin-left: 0px; height: 35px ; width: 100px; margin-top: 0px; color: white; background-color: black; font-weight: bolder; margin-bottom: 20px;"
+                btn.addEventListener("click",completionpage )
+                mbox.append(btn)
+
+                
+            }
+        }
+    }
+    function emptydata(){
+        if (ccnum.value==""){
+            alert("Please Enter card number")
+        }
+        else{
+            window.location.href="order complete.html"
+        }
+    }
+    function completionpage(){
+        window.location.href="order complete.html"
+    }
+</script>

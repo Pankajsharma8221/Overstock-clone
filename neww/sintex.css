@@ -1,0 +1,175 @@
+#Zcontainer
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 40px;
+    color: rgb(68, 68, 68);
+    background-color: whitesmoke;
+    cursor: pointer;
+    position: sticky;
+}
+a
+{
+  color: black;
+  text-decoration: underline;
+  
+}
+.stickz{
+    height: 80px;
+    width: 250%;
+    }
+i
+{
+    margin-left: 0.5%;
+}
+#Zhead
+{
+ display: flex;
+ height: 60px;
+ justify-content: space-around;
+ margin: auto;
+}
+  
+/* form.example button {
+    width: 20%;
+    padding: 12px;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    color: #8c9bad;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: 192%;
+    margin-top: -20%;
+  } */
+  #Zpiku
+  {
+    border: 1px solid grey;
+    width: 310%;
+    padding: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #8c9bad;
+    background-color: #ffffff;
+    margin-left: -120%;
+    border-radius: 5px;
+    margin-top: 7%;
+  }
+  form.example button:hover {
+    background: #021321;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .roy
+  {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    text-align: center;
+    margin-top: 0.5%;
+    font-size: large;
+    color:teal;
+  }
+  .ALP
+  {
+    margin-top: -2%;
+    color: grey;
+  }
+  .navbar
+        {
+            display: flex;
+            height: 50px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            margin-top: 1%;
+            border: 1PX SOLID teal;
+            border-top: none;
+            border-left: none;
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+        }
+       .B>ul
+       {
+           display: grid;
+           grid-template-columns: repeat(13, 1fr);
+           grid-template-rows: auto;
+           gap: 2px;
+            margin-left: -1%;
+           align-items: center;
+           margin-top: 0.8%;
+       }
+       ul>li:hover
+       {
+           display: block;
+       }
+       ul>li{
+           list-style-type: none;
+           font-size: large;
+           font-family: 'Poppins', sans-serif;
+           border-top: none;
+       }
+       ul>li:nth-child(6)
+       {
+        margin-left: -48%;
+       }
+       ul>li:nth-child(13)
+       {
+        margin-left: -20%;
+       }
+#abox1{
+    /* border: 1px solid blue; */
+    width: 25%;
+    position: relative;
+}
+#abox1>p:nth-child(2){
+    border: 1px solid;
+    border-radius:50px;
+    width: 35%;
+    padding: 10px;
+}
+#alist{ 
+display: grid;
+grid-template-columns: repeat(1, 1fr)
+;
+    /* border: 1px solid aqua; */
+    height: 500px;
+    overflow-y: scroll;
+ 
+}
+.filter-list{ 
+      font-weight: bold;
+      font-size:15px;
+      border-left: none;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid lightgrey;
+      height:50px;
+    
+}
+#aghu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+    margin-left: 30px;
+    margin-top: 110px;
+    position: sticky;
+
+}
+#aguh{
+    border: 1px solid whitesmoke;
+    width: 300px;
+}
+#arats{
+    height: 75px;
+    width : 150px
+}
+#ayu{
+    width:300px;
+}
+#abada{
+    display: flex;
+}

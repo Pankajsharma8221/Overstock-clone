@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping page</title>
+    <link rel="stylesheet" type="text/css" href="./footer.css">
+  <style>
+    
+
+#pbody {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+#pheading {
+     display: flex;
+     height: 130px;
+     width: 103%;
+     background-color: black;
+     margin-top: -30px;
+     text-align: center;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     font-family: BBText Regular,Helvetica,Arial,sans-serif;
+     font-size: 35px;
+     line-height: 19px;
+}
+
+#pbox {
+    display: flex;
+    height: 1400px;
+    width: 70%;
+    /* border: 1px black solid;   */
+    margin-left: 240px; 
+    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pcheckout {
+    width: 63%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+#pReward {
+    width: 34.5%;
+    height: 100%;
+    /* border: 1px solid black; */
+    /* background-color:rgb(231, 225, 225); */
+    margin-left: 20px;
+}
+
+.headingc {
+    width: 100%;
+    height: 80px;
+    border: 1px solid white;
+    border-bottom: 3px solid black;
+    
+}
+
+.mail {
+    width: 100%;
+    height: 55px;
+    border-top: 1px solid grey;
+   
+}
+
+#pshippingform {
+    
+    width: 100%;
+    height: 650px;
+    /* border: 1px solid black; */
+   align-items: center;
+  
+    
+}
+ 
+.name {
+    /* display: flex; */
+    width: 45%;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    border: 1px light gray;
+    
+}
+
+.paddress {
+   width: 94%;
+   height: 40px;
+   margin-bottom: 20px;
+   margin-left: 15px;
+}
+
+.padd {
+    width: 29%;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+#pstate {
+    width: 27%;
+    height: 44px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.freeship {
+    border-bottom: 1px solid black;
+    width: 90%;
+    height: 40px;
+    margin-top: 68px;
+    margin-left: 14px;
+   
+}
+#psu {
+    display: flex;
+    /* border-bottom: 1px solid black;  */
+}
+
+#psubbtton {
+    margin-left: 20px;
+    height: 30px ;
+    width: 100px;
+    margin-top: 15px;
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#pbag {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    /* border: 1px solid black; */
+    background-color:rgb(231, 225, 225);
+    /* items added in cart will be pasted here */
+    justify-content: center;
+    
+
+}
+
+#pinnerbag {
+    width: 92%;
+    height: 100%;
+    /* border: 1px solid black; */
+    
+}
+
+#pfooter {
+    width :103%;
+    height:190px;
+    border: 1px solid;
+    margin-top: 90px;
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+}
+
+.foot {
+    width: 33%;
+    height: 100px;
+    border: 1px solid black;
+    color: white;
+    margin-top: 60px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+
+#plastbox {
+    width: 100%;
+    height: 60px;
+    /* border-top: 1px solid black; */
+    border-bottom: 1px solid black;
+    text-align: center;
+    /* padding-top: 15px; */
+}
+
+#pdonate {
+    width:100%;
+    height: 500px;
+    /* border: 1px solid black; */
+    /* margin-top: 30px; */
+}
+a
+{
+  color: black;
+  text-decoration: underline;
+}
+#zken
+{
+  color: teal;
+  text-decoration: underline;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}
+.stickz{
+    height: 80px;
+width: 250%;
+}
+i
+{
+    margin-left: 0.5%;
+}
+#zhead
+{
+ display: flex;
+ height: 60px;
+ justify-content: space-around;
+ margin: auto;
+}
+
+  #zpiku
+  {
+    border: 1px solid grey;
+    width: 310%;
+    padding: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #8c9bad;
+    background-color: #ffffff;
+    margin-left: -120%;
+    border-radius: 5px;
+    margin-top: 7%;
+  }
+  form.example button:hover {
+    background: #021321;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .roy
+  {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    text-align: center;
+    margin-top: 0.5%;
+    font-size: large;
+    color:teal;
+  }
+  .ALP
+  {
+    margin-top: -2%;
+    color: grey;
+  }
+  .navbar
+        {
+            display: flex;
+            height: 50px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            margin-top: 1%;
+            border: 1PX SOLID teal;
+            border-top: none;
+            border-left: none;
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+        }
+       .B>ul
+       {
+           display: grid;
+           grid-template-columns: repeat(13, 1fr);
+           grid-template-rows: auto;
+           gap: 2px;
+            margin-left: -1%;
+           align-items: center;
+           margin-top: 0.8%;
+       }
+       ul>li:hover
+       {
+           display: block;
+       }
+       ul>li{
+           list-style-type: none;
+           font-size: large;
+           font-family: 'Poppins', sans-serif;
+           border-top: none;
+       }
+       ul>li:nth-child(6)
+       {
+        margin-left: -48%;
+       }
+       ul>li:nth-child(13)
+       {
+        margin-left: -20%;
+       }
+  </style>
+    <link rel="stylesheet" href="./footer.css">
+
+
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<body> 
+    <header>
+        <ul style="display:flex;" >
+            <li>Ship</li>
+            <li>To:</li>
+            <li><i class="fa-solid fa-earth-asia">India</i></li>
+        </ul>
+    </header>
+    
+    <header>
+        <div id="zhead">
+            <a href="./index.html"><img class="stickz" src="https://www.logo.wine/a/logo/Overstock.com/Overstock.com-Logo.wine.svg" alt="sports jam"></a>
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input id="zpiku" type="text" placeholder="Search.." name="search2"/>
+                <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+            </form>
+            <div class="roy">
+                <div class="zen">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="ALP"><a style="text-decoration: none;color:grey" href="./User Account/account.html">Account</a></p>
+           
+                </div> 
+                <div class="zen">
+                    <i class="fa-solid fa-heart"></i>
+               <p class="ALP">WishList</p>
+                </div>
+                <div class="zen">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="ALP">Cart</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="navbar">
+        <div class="B">
+            <ul>
+                <li><a style="text-decoration:none; color:black;" href="./furniture/furni.html">Furniture</a> </li>
+                <li><a style="text-decoration:none ;color:black;" href="./wash/washable.html">Rugs</a> </li>
+                <li><a style="text-decoration:none ;color:black;" href="./decor/decor.html">Decor</a> </li>
+                <li><a style="text-decoration:none ;color:black;" href="./neww/sintex.html">Bedding</a> </li>
+                <li>Home</li>
+                <li>Improvement</li>
+                <li>Kitchen</li>
+                <li>Outdoor</li>
+                <li>Lighting</li>
+                <li>Kids & Baby</li>
+                <li>More</li>
+                <li>Ideas</li>
+                <li>Sales & Deals</li>
+            </ul>
+        </div>
+    </nav>
+ 
+
+        <!-- navbar  -->
+
+
+
+    <div id="pbox">
+        <div id="pcheckout">
+            <div class="headingc"><p style="font-weight: bolder;
+             font-size: 20px;
+             font-family: BBText Bold,Helvetica,Arial,sans-serif; margin-left: 20px;padding-top: 20px;">C H E C K O U T</p></div>
+             <div class="mail" style="background-color:rgb(231, 225, 225)"><p style="font-weight: bolder;margin-left: 20px;">E M A I L</p></div>
+             <div class="mail" ;"><p style="font-weight: bolder;margin-left: 20px;">Pankajsaraswatsharma@gmail.com</p></div>
+             <div class="mail" style="background-color:rgb(231, 225, 225)"><p style="font-weight: bolder;margin-left: 20px;">S H I P P I N G</p></div>
+             <div id="pshippingform" >
+                 <form id="padddetails">
+                     <input id="pfname" class="name" type="text" placeholder="* First Name" value="">
+                     <input id="plname" class="name" type="text" placeholder="* Last Name" value=""><br>
+                     <input class="address" id="paddress1" type="text" placeholder="* Street Address">
+                     <input class="address" id="paddress2" type="text" placeholder="* Apt, Suit, unit, floor etc (Optional)">
+                     <input class="add" id="paddress3" type="number" placeholder="* Zipcode" ><input class="add" id="paddress4" type="text" placeholder="* City">
+                     <select id="pstate">
+                        <option value="none" >Select State</option>
+                        <option value="California">California</option>
+                        <option value="Washington">Washington</option>
+                        <option value="New York">New York</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Chicago">Chicago</option>
+                      </select>
+                      <p style="font-size: 14x;margin-left: 15px; margin-top: -10px;">Location <br>United States</p>
+                      <p style="font-size: 12px;margin-left: 15px;margin-top: -10px;">*Shipping limited to United States addresses only</p>
+                      <input id="pphone" style="height: 40px; width: 40%;margin-left: 15px;margin-top: 10px;" type="number" placeholder="* Phone Number" >
+                      <div class="freeship"><p style="font-weight: bolder;
+                        font-size: 14px;
+                        font-family: BBText Bold,Helvetica,Arial,sans-serif; margin-left: 20px; margin-top: 25px;
+                        margin-bottom: -30px;">S I G N &nbsp; U P</p></div>
+                        <div id="psu">
+                        <input  type="checkbox" style="margin-top: 20px;"><p style="font-size: 16px;">I'd like to receive recurring advertising text messages (SMS and MMS) from Overstock. I understand these text messages may be sent via an autodialer, that consent is not required to purchase goods from Overstock, and that I can opt-out any time by replying STOP to the text message I receive from Overstock. I can text HELP for more information. Msg and data rates may apply. If I am a California resident, I agree to the Notice of Financial Incentive. To learn more, view our 
+                            <a href="">Privacy Policy</a>.</p>
+                        </div>
+                        <input type="submit" id="psubbtton">
+                 </form>
+                 <div class="mail" style="background-color:rgb(231, 225, 225)"><p style="font-weight: bolder;margin-left: 20px; margin-top: 15px;" >P A Y M E N T</p></div>
+                 <div class="mail" style="background-color:rgb(231, 225, 225)"><p style="font-weight: bolder;margin-left: 20px;">C O M P L E T E &nbsp; O R D E R</p></div>
+                 <p style="font-size: 16px;margin-left: 15px;">By clicking Place Order, I agree to be bound by the Overstock Terms and Conditions and <a href="">Privacy Policy</a>.</p>
+                 <div class="freeship"><p style="font-weight: bolder;
+                    font-size: 14px;
+                    font-family: BBText Bold,Helvetica,Arial,sans-serif; margin-top: 25px;
+                    margin-bottom: -30px;">O U R &nbsp; G U A R A N T E E</p></div>
+                     <div id="psu">
+                       <p style="font-size: 16px;margin-left: 10px;margin-right:20px ;">If for any reason you are not completely satisfied with your Overstock Online purchase, simply return the unused portion and we will be happy to process an exchange or remit your account for the full amount of the purchase. Please refer our Return Policy.</p>
+                        </div>
+             </div>
+             
+        </div>
+        <div id="pReward" >
+            <div id="pbag">
+                <div id="pinnerbag">
+                    <div  style=" border-bottom: 1px black solid;"><p style="font-weight: bolder; margin-top: 15px;" >S H O P P I N G &nbsp;B A G</p></div>
+                    <div class="mail";" id="pnoofitems" ><p style="font-weight: bolder;"></p></div>
+                   
+                    <div class="mail" style=" border-bottom: 1px black solid;"> 
+                        <h2 style=" font-family: 'Titillium Web', sans-serif;">O F F E R &nbsp; C O D E</h2></div>
+                    <input type="text" style="width: 96%;height: 35px;border-color: 1px grey;margin-top: 30px; padding-left: 10px; " placeholder="Offer Code">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p >One offer code per order</p>
+                        <a href="https://www.bobbibrowncosmetics.com/includes/content/see_all_offers_popup.tmpl?embed=1" style="font: size 11px; color:#949494; margin-top: 15px;">See all other offers</a>
+                    </div>
+                    <button style="height: 30px ;width: 100px;margin-top: 15px;color: white;background-color: black;font-weight: bolder;">APPLY</button>
+                    <div style="width: 100%; border-bottom:1px solid black;margin-top: 20px;"></div>
+                    <div id="plastbox"><p style="margin-top: 10px;"> Join Overstock Access <br> and earn 30 points with your purchase today.</p>
+                       
+                    </div>
+                </div>
+            </div>
+           <!-- --------------------------------------------------------------------  -->
+           <div id="pdonate" class="mail" style="border-bottom: 1px black solid;border-top: 0px;"><h2 style="font-family: 'Titillium Web', sans-serif;">D O N A T E</h2>
+            <div style="border-bottom: 1px solid black;width: 100%;margin-top: -8px;">
+            </div>
+            <img src="https://www.bobbibrowncosmetics.com/media/export/cms/products/80x80/bb_prod_555877_80x80_0.jpg" alt="">
+            <select type="text" style="width:96%; height: 28px;"><option value="">Overstock DONATION</option>
+                <option value="">SHE'S THE FIRST</option></select> <div style="height: 200px;width: 100%;"><p>Donate today to The Breast Cancer Research Foundation to support life-saving research. Learn More.</p>
+                    <input type="radio" name="donation"><label for="donat">$1.00</label>
+                    <input type="radio" name="donation" ><label for="donat">$5.00</label>
+                    <input type="radio" name="donation" ><label for="donat">$10.00</label><br><br>
+                    <button id="psubbtton" style="margin-left: 2px;">Add to Bag</button>
+                </div>
+        </div>
+
+
+
+
+
+
+           <!-- --------------------------------------------------------------------------------  -->
+        </div>  
+    </div>
+
+    <div class="footer">
+        <div id="vfoot">
+            <div>
+                <h4><a class="vfooter" href="">MY ACCOUNT</a></h4>
+                <br>
+                <div><a class="vfooter" href="">Orders & Returns</a></div>
+                <div><a class="vfooter" href="">Email Preferences</a></div>
+                <div><a class="vfooter" href="">Account Settings</a></div>
+                
+            </div>
+
+            <div>
+                <h4>LET US HELP</h4>
+                <br>
+                <div>Contact Customer Care
+                </div>
+                <div> Shipping Information
+
+                </div>
+                <div> 
+                    Return Policy
+                </div>
+                <div> International Help
+                </div>
+                <div> 
+                    Accessibility
+                </div>
+               
+            </div>
+
+            <div>
+                <h4>COMPANY INFORMATION</h4>
+                <br>
+                <div>About Overstock™</div>
+                <div> 
+                    Contact Us</div>
+                <div> Careers</div>
+                <div> Investor Relations
+                </div>
+                <div> Sell Your Products
+                </div>
+                <div> Supply Chain Transparency</div>
+            </div>
+            <div>
+                <h4>MORE WAYS TO SHOP
+                </h4>
+                <br>
+                <div>Tips & Ideas</div>
+                <div> 
+                    Deals</div>
+                <div> Clearance</div>
+                <div> New Arrivals
+                </div>
+               
+            </div>
+           
+        </div>
+        <div id="vlast">
+            <div id="vlast1">
+                © Copyright 2022, Overstock.com®, Inc. <br>
+799             Coliseum Way Midvale, UT 84047 | 1-800-843-2446
+            </div>
+
+            <div id="vPrivacy">
+                <div>
+                    Privacy Policy
+                </div>
+                <div>
+                    Terms & Conditions
+                </div>
+                <div>
+                    *Promotion Terms
+                </div>
+                <div>
+                    Ship to:
+                </div>
+                <div id="vflag">
+                    <img src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt="">
+                </div>
+            </div>
+        </div>
+    
+
+    
+</body>
+</html>
+<script src="https://kit.fontawesome.com/1176b352c6.js" crossorigin="anonymous"></script>
+
+<script>
+    var submission = document.querySelector("#padddetails").addEventListener("submit",myaddress)
+ 
+  
+   
+  
+   
+
+    // -------------------------------------------------------------------------------------------------------------------------
+
+
+
+function myaddress(){
+    event.preventDefault();
+   
+    var Name =document.createElement("p")
+    var addressp =document.createElement("p")
+    var statep =document.createElement("p")
+    var phonep = document.createElement("p")
+    
+    Name.append(adddetails.fname.value+" "+adddetails.lname.value);
+    var innerstate = statep.innerText=document.querySelector("#state").value
+   
+    var innernum = phonep.innerText=document.querySelector("#phone").value
+
+  
+    var iname =Name.innerText=adddetails.fname.value+" "+adddetails.lname.value
+    var resiaddress = addressp.innerText=adddetails.address1.value+", "+adddetails.address2.value+", "+adddetails.address4.value+", "+adddetails.address3.value+", "
+   
+    
+    
+    
+    
+    
+    var storage =localStorage.setItem("username",iname)
+    localStorage.setItem("address",resiaddress)
+    localStorage.setItem("innerstate",innerstate)
+    localStorage.setItem("phoneno",innernum)
+    
+    if ( iname==""+" "+"" || innernum=="" || resiaddress==", "+", "+", "+", "){
+        alert("Please enter all the details")
+    }
+    else {
+        window.location.href="payment.html"
+    }
+}
+
+
+// -------------------------------------------------------------------------------------------------------------- 
+                                               // cart details
+
+
+                            
+                                               var lsfinallength = localStorage.getItem("fulllength")
+
+
+var lscartdata = JSON.parse(localStorage.getItem("cartData"));
+
+Displayitems (lscartdata)
+
+function Displayitems (cartData)
+{
+
+    for (var i=0; i<cartData.length; i++){
+
+        var lscart = JSON.parse(localStorage.getItem("cartData"))
+                    var innbag = document.querySelector("#innerbag")
+
+
+                    var itemlength = document.querySelector("#noofitems")
+                    itemlength.innerText=lsfinallength+" items"
+                    itemlength.style="display:flex; justify-content:space-between; align-items:center"
+
+                    var editcart = document.createElement("button")
+                    editcart.innerText="EDIT"
+                    editcart.style="height: 30px ;width: 70px;margin-top: 0px;color: white;background-color: black;font-weight: bolder;"
+                    itemlength.append(editcart)
+
+
+                    // var line = document.createElement("div")
+                    // line.style="width=100%; border-bottom : 1px solid grey; margin-top:15px"
+                    // innbag.append(line)
+
+                    var items = document.createElement("div")
+                    items.style="width=100%; height:100px;margin-top:20px; display:flex"
+                    innbag.append(items)
+
+                    var itemimg = document.createElement("img")
+                    itemimg.style="width:auto;height:auto  "
+                    items.append(itemimg)
+                    itemimg.src=cartData[i].img
+                    // itemimg.append(cartData[i].img)
+
+                    // -----------Append img in itemimg -------------- 
+
+                    var iteminfo = document.createElement("div")
+                    iteminfo.style="width:52%;  font-size:15px; font-style:bold; margin-left:10px; display:flex; align-items:center"
+                    items.append(iteminfo)
+
+                    iteminfo.append(cartData[i].name)
+
+
+                    // -----------Append info in iteminfo -------------- 
+
+                    var pricequan = document.createElement("div")
+                    pricequan.style="width:23%; display:flex; align-items:center; justify-content:center"
+                    items.append(pricequan)
+                    var sym = "€";
+                    pricequan.append(sym + cartData[i].price)
+
+                     var line = document.createElement("div")
+                    line.style="width=100%; border-bottom : 1px solid grey; margin-top:15px"
+                    innbag.append(line)
+
+    }
+
+}
+sumbuys = 0
+for (var j=0; j<lscartdata.length; j++){
+    sumbuys = sumbuys + lscartdata[j].price
+}
+
+var sym = "€";
+var lsfinalsum = localStorage.getItem("finalSum")
+
+var innbag = document.querySelector("#innerbag")
+
+var sumtotal = document.createElement("div")
+sumtotal.style="width:100%; height:250px; margin-top:15px"
+innbag.append(sumtotal)
+
+var sumtotalh = document.createElement("div")
+sumtotalh.style="width:100%; height:15px; display:flex;justify-content:space-between"
+
+
+var sumtotalp = document.createElement("p")
+sumtotalp.innerText="SUB TOTAL :"
+sumtotalh.append(sumtotalp)
+
+
+
+var sumtotaltotal = document.createElement("p")
+sumtotaltotal.innerText=sym+(lsfinalsum-(lsfinalsum*6/100))
+sumtotalh.append(sumtotaltotal)
+
+sumtotal.append(sumtotalh)
+// --------------------------------------------- 
+var time = document.createElement("div")
+time.style="width:100%; height:15px; display:flex;justify-content:space-between;margin-top:10px"
+
+var days = document.createElement("p")
+days.innerText="Standard (3-5 days)"
+time.append(days)
+
+var free = document.createElement("p")
+free.innerText="FREE"
+time.append(free)
+
+sumtotal.append(time)
+// ------------------------------------------------ 
+
+var tax = document.createElement("div")
+tax.style="width:100%; height:15px; display:flex;justify-content:space-between;margin-top:10px"
+
+var sales = document.createElement("p")
+sales.innerText="Sales tax (6.000%)"
+tax.append(sales)
+
+var taxper = document.createElement("p")
+ var taxplus = taxper.innerText=sym+(lsfinalsum*(6/100))
+tax.append(taxper)
+
+sumtotal.append(tax)
+// ------------------------------------------------- 
+
+var ftotal = document.createElement("div")
+ftotal.style="width:100%; height:15px; display:flex;justify-content:space-between;margin-top:10px"
+
+var wtotal = document.createElement("p")
+wtotal.innerText="TOTAL"
+wtotal.style="font-weight:bolder"
+ftotal.append(wtotal)
+
+var totaln = document.createElement("p")
+totaln.innerText=sym+(lsfinalsum)
+totaln.style="font-weight:bolder"
+
+ftotal.append(totaln)
+
+sumtotal.append(ftotal)
+// ----------------------------------------------------- 
+
+var p1 = document.createElement("div")
+p1.innerText="Pay $0 Now"
+p1.style="margin-top:25px"
+
+var p2 = document.createElement("div")
+p2.innerText="First Payment 2 Weeks From Purchase"
+
+var p3 = document.createElement("div")
+p3.innerText="4 interest-free installments of $35.77 with"
+
+var apimg = document.createElement("img")
+apimg.src="https://www.bobbibrowncosmetics.com/media/images/checkout/afterpay-logo-black.png"
+apimg.style="height:20px; width:90px"
+
+
+sumtotal.append(p1,p2,p3,apimg);
+</script>
