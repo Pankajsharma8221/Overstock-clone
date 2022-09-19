@@ -32,20 +32,7 @@ i
  margin-top: 3%;
 }
   
-/* form.example button {
-    width: 20%;
-    padding: 12px;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-    color: #8c9bad;
-    background-color: #ffffff;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    margin-left: 192%;
-    margin-top: -20%;
-  } */
+
   #cpiku
   {
     border: 1px solid grey;
@@ -361,3 +348,7 @@ position: fixed;
 background-color: white;
 z-index: 20px;
 }
+
+
+
+

@@ -328,3 +328,124 @@ font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 text-align: center;
 font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 } 
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #ycontainer2{
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:auto;
+        gap: 20px;
+     
+
+    }
+    #ycontainer5{
+        display: grid;
+        width: 70%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+       
+        gap: 20px;
+        /* border: 1px solid black; */
+        /* margin: auto; */
+      
+        margin-top: -500px;
+        
+
+    }
+    #ybox2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        /* border: 1px solid red; */
+        width: 73%;
+        height: auto;
+        
+        
+        }
+
+        #ycontainer3{
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            /* border: 1px solid black; */
+            /* margin: auto; */
+        display: block;
+ margin: auto;
+ justify-content: center;    
+        }
+        #ycontainer{
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            /* border: 1px solid black; */
+            /* margin: auto; */
+      
+    
+        }
+}
+
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    #ycontainer2{
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:auto;
+        gap: 20px;
+     
+
+    }
+    #ycontainer5{
+        display: grid;
+        width: 70%;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+       
+        gap: 20px;
+        /* border: 1px solid black; */
+        /* margin: auto; */
+      
+        margin-top: -500px;
+        
+
+    }
+    #ybox2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        /* border: 1px solid red; */
+        width: 73%;
+        height: auto;
+        
+        
+        }
+
+        #ycontainer3{
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            /* border: 1px solid black; */
+            /* margin: auto; */
+        display: block;
+ margin: auto;
+ justify-content: center;    
+        }
+        #ycontainer{
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+           
+        }
+}
