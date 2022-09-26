@@ -137,29 +137,110 @@ i
         font-size: 15px;
         font-weight: 0px;
     }
+    
+@media all and (min-width: 320px) and (max-width: 767px) {
+    #yhead
+    {display:none;
+        }
+    
+        #ytext{
+            /* border: 1px solid black; */
+           display:none;
+        }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+
+    #yhead
+    {display:none;
+        }
+    
+        #ytext{
+            /* border: 1px solid black; */
+           display:none;
+        }
+}
     #yimg1{
         border: 1px solid black;
-        width: 1068px;
+        width: 100%;
         height: 90px;
         margin-left: 360px;
         margin-top: -300px;
+        margin-right: 40px;
     }
     #yimg1>img{
         height: 100%;
         width: 100%;
+        margin-right: 40px;
     }
     #yimg2{
         /* border: 1px solid black; */
-        width: 1065px;
-        height: 350px;
+        width: 100%;
+        height: 40%;
         margin-left: 360px;
         margin-top: 30px;
+        margin-right: 40px;
     }
     #yimg2> img{
-        height: 100%;
+        height: 40%;
         width: 100%;
+        margin-right: 40px;
+    }
+    
+    @media all and (min-width: 320px) and (max-width: 767px) {
+        #yhead
+        {display:none;
+            }
+        
+            #ytext{
+                /* border: 1px solid black; */
+               display:none;
+            }
+            
+    #yimg1{
+        display:  none;
+    }
+    #yimg1>img{
+        display:  none;
+    }
+    #yimg2{
+        /* border: 1px solid black; */
+        display:  none;
+    }
+    #yimg2> img{
+        display:  none;
+    }
+    }
+    
+    
+    @media all and (min-width: 768px) and (max-width: 1024px){
+    
+        #yhead
+        {display:none;
+            }
+        
+            #ytext{
+                /* border: 1px solid black; */
+               display:none;
+            }
+            
+    #yimg1{
+        display:  none;
+    }
+    #yimg1>img{
+        display:  none;
+    }
+    #yimg2{
+        /* border: 1px solid black; */
+display:none;
+    }
+    #yimg2> img{
+      display:  none;
 
     }
+    }
+
     #yhead1{
         /* border: 1px solid black; */
         width: 90%;
@@ -230,7 +311,7 @@ i
         display: grid;
         width: 90%;
         grid-template-columns: repeat(6,1fr);
-        grid-template-rows: repeat(1,300px);
+        grid-template-rows: auto;
         gap: 20px;
         /* border: 1px solid black; */
         /* margin: auto; */
@@ -334,6 +415,60 @@ font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     #ycontainer2{
         display: grid;
         width: 90%;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:auto;
+        gap: 20px;
+     
+
+    }
+    #ycontainer5{
+        display: grid;
+        width: 70%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+       
+        gap: 20px;
+        /* border: 1px solid black; */
+        /* margin: auto; */
+      
+        margin-top: -500px;
+        
+
+    }
+    #ybox2{
+        display: none;
+        
+        
+        
+        }
+
+        #ycontainer3{
+            display: grid;
+    
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+          
+       
+        }
+        #ycontainer{
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            /* border: 1px solid black; */
+            /* margin: auto; */
+      
+    
+        }
+}
+
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    #ycontainer2{
+        display: grid;
+        width: 90%;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows:auto;
         gap: 20px;
@@ -355,14 +490,7 @@ font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 
     }
     #ybox2{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 20px;
-        /* border: 1px solid red; */
-        width: 73%;
-        height: auto;
-        
+        display: none;
         
         }
 
@@ -373,77 +501,12 @@ font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
             grid-template-rows: auto;
             gap: 20px;
             /* border: 1px solid black; */
-            /* margin: auto; */
-        display: block;
- margin: auto;
- justify-content: center;    
-        }
-        #ycontainer{
-            display: grid;
-            width: 90%;
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: auto;
-            gap: 20px;
-            /* border: 1px solid black; */
-            /* margin: auto; */
-      
-    
-        }
-}
-
-
-@media all and (min-width: 320px) and (max-width: 767px) {
-    #ycontainer2{
-        display: grid;
-        width: 90%;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows:auto;
-        gap: 20px;
      
-
-    }
-    #ycontainer5{
-        display: grid;
-        width: 70%;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: auto;
-       
-        gap: 20px;
-        /* border: 1px solid black; */
-        /* margin: auto; */
-      
-        margin-top: -500px;
-        
-
-    }
-    #ybox2{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto;
-        gap: 20px;
-        /* border: 1px solid red; */
-        width: 73%;
-        height: auto;
-        
-        
-        }
-
-        #ycontainer3{
-            display: grid;
-            width: 90%;
-            grid-template-columns: repeat(1,1fr);
-            grid-template-rows: auto;
-            gap: 20px;
-            /* border: 1px solid black; */
-            /* margin: auto; */
-        display: block;
- margin: auto;
- justify-content: center;    
         }
         #ycontainer{
             display: grid;
             width: 90%;
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(3,1fr);
             grid-template-rows: auto;
             gap: 20px;
            

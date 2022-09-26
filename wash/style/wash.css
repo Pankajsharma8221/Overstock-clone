@@ -83,34 +83,7 @@ i
     color:teal;
   }
   
-@media all and (min-width: 320px) and (max-width: 767px) {
-    .roy
-    {
-      display: grid;
-      grid-template-columns:repeat(2,1fr);
-      grid-template-rows: auto;
-      gap: 10px;
-  
-    }
-    #qbox1{
-        display:none;
-    }
-}
 
-@media all and (min-width: 768px) and (max-width: 1024px){
-    .roy
-    {
-      display: grid;
-      grid-template-columns:repeat(1,1fr);
-      grid-template-rows: auto;
-      gap: 10px;
-    
-    }
-    #qbox1{
-        display:none;
-    }
-
-}
 
   .ALP
   {
@@ -193,6 +166,61 @@ i
     margin-top:20px;
 
     
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .roy
+  {
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+
+  }
+  #qbox1{
+      display:none;
+  }
+  #washable{
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto;
+gap: 20px;
+/* border: 1px solid red; */
+
+
+}
+#washimg{
+  height: 200px;
+  width: 350px;
+}
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+  .roy
+  {
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  
+  }
+  #qbox1{
+      display:none;
+  }
+  #washable{
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto;
+gap: 20px;
+
+
+}
+#washimg{
+  height: 200px;
+  width: 350px;
+}
+
+
 }
 #qbox1{
     /* border: 1px solid blue; */

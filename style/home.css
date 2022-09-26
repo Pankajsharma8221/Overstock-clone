@@ -164,10 +164,41 @@ img{
 #vtime{ 
     margin-bottom: 5%;
     margin-top: 15px;        
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
     width: 100%;
     height: auto;
    
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+   
+#vtime{ 
+    margin-bottom: 5%;
+    margin-top: 15px;        
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    height: auto;
+   
+}
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    
+#vtime{ 
+    margin-bottom: 5%;
+    margin-top: 15px;        
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    height: auto;
+   
+}
 }
 #vtime>div{
     margin-left: 1%;
@@ -206,6 +237,30 @@ img{
     gap: 20px;
 }
 
+@media all and (min-width: 320px) and (max-width: 767px) {
+   
+#vfresh{
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    
+#vfresh{
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+}
   
 #vthird{
 display: flex;
@@ -236,16 +291,50 @@ height: auto;
 
 }
 #vfive{
-display: flex;
-width: 100%;
+
+/* display: flex; */
+display: grid;
+grid-template-columns: repeat(4,1fr);
+width: 100%; 
 height: auto;
 margin-top: 10px;
 background: color #f5f5f5;
 
 
 }
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    #vfive{
+
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%; 
+        height: auto;
+        margin-top: 10px;
+        background: color #f5f5f5;
+        
+        
+        }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    #vfive{
+
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%; 
+        height: auto;
+        margin-top: 10px;
+        background: color #f5f5f5;
+        
+        
+        }
+}
 #vfive>div{   
-width: 24%;
+/* width: 24%; */
 margin-left: 10px;
 margin-bottom: 5%;
 background: color #f5f5f5;
@@ -259,16 +348,47 @@ margin-bottom: 5%;
 background: url("https://ak1.ostkcdn.com/img/mxc/030822-RIUpdate-Mbl.jpg?imwidth=1920");
 }
 #vseven{
-margin: auto;
-display: flex;
-width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+/* display: flex; */
+/* width: 95%; */
 height: auto;
 margin-top: 5%;
 background: color #f5f5f5;
 
 }
+
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    #vseven{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+ 
+    /* width: 95%; */
+    height: auto;
+    margin-top: 5%;
+    background: color #f5f5f5;
+    
+    }
+    
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    #vseven{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+  
+    /* width: 95%; */
+    height: auto;
+    margin-top: 5%;
+    background: color #f5f5f5;
+    
+    }
+    
+}
 #vseven>div{
-width: 33%;
+/* width: 33%; */
 height: auto;
 margin: auto;
 margin-left: 1%;
@@ -282,29 +402,10 @@ background-color: rgb(46, 45, 45);
 color: white;
 font-size: 16px;
 margin-top: 2%;
+margin-bottom: 10px;
 
 border: none;
 cursor: pointer;    
-}
-#vlast{
-width: 95%;
-
-display: grid;
-grid-template-columns: repeat(3,1fr);
-grid-template-rows: auto;
-gap: 15px;
-margin: auto;
-margin-top: 2%;
-margin-bottom: 5%;
-}
-#vlast>div{
-background-color: #f5f5f5;
-text-align: center;
-color: rgb(107, 104, 104);
-
-font-weight: 600;
-font-size: 20px;
-padding: 10px;
 }
 #vhr{
 border: 1px solid grey;
@@ -348,7 +449,5 @@ position: fixed;
 background-color: white;
 z-index: 20px;
 }
-
-
 
 

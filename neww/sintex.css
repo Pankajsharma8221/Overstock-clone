@@ -173,3 +173,11 @@ grid-template-columns: repeat(1, 1fr)
 #abada{
     display: flex;
 }
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+   
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+}
